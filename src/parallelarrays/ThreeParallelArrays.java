@@ -1,4 +1,5 @@
 package parallelarrays;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -25,6 +26,9 @@ public class ThreeParallelArrays {
 				counter++;
 			}
 			System.out.print("The state "+ state + " has an abreviation of "+ statesAbbreviation[index] + " and a capital of "+ capitals[index] +".");
+			System.out.println("\n Enter the zip code of the Capital: ");
+			String zip = scanner.nextLine();
+			Array.set(capitals, index, capitals[index] + " - " + zip);
 			
 		}
 	}
